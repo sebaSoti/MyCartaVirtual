@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carta Virtual"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entradas"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            app:srcCompat="@drawable/entradas_restaurante" />
+
+        <Button
+            android:id="@+id/buttonEntradas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="conocerEntradas"
+            android:text="Conoce nuestras Entradas" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plato Fuerte"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            app:srcCompat="@drawable/platos_restaurante" />
+
+        <Button
+            android:id="@+id/buttonPlatos"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="conocerPlatos"
+            android:text="Conoce nuestros Platos fuertes" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bebidas"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            app:srcCompat="@drawable/bebidas_restaurante" />
+
+        <Button
+            android:id="@+id/buttonBebidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="conocerBebidas"
+            android:text="Conoce nuestras bebidas" />
+
+        <Button
+            android:id="@+id/buttonSedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="conocerSedes"
+            android:text="conoce nuestras sedes" />
+
+        <Button
+            android:id="@+id/buttonReserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="realizarReserva"
+            android:text="Realiza una reserva" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
